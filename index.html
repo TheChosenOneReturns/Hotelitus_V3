@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotelitus - Tu hogar lejos de casa</title>
+    <title>HOTELITUS - Tu hogar lejos de casa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS file reference -->
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -15,7 +17,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202024-10-17%20at%2022.59.36-z6KyF33npnmaNJOxr6o4A5d7Pf6si0.jpeg" alt="Hotelitus Logo" width="40" height="40">
-                <span>Hotelitus</span>
+                <span>HOTELITUS</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -40,33 +42,37 @@
     </nav>
     
     <header id="inicio" class="hero">
-        <div class="hero-content text-center" data-aos="fade-up">
-            <h1 class="animated-title mb-4">Bienvenido a Hotelitus</h1>
-            <p class="lead mb-4">Tu oasis de lujo en el corazón de la naturaleza</p>
-            <div class="hero-features mb-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-3 col-sm-6 mb-3">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <p>Experiencia 5 estrellas</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                        <i class="bi bi-tree-fill text-success"></i>
-                        <p>Entorno natural único</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                        <i class="bi bi-heart-fill text-danger"></i>
-                        <p>Atención personalizada</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-3">
-                        <i class="bi bi-cup-hot-fill text-primary"></i>
-                        <p>Gastronomía gourmet</p>
-                    </div>
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-12 text-center">
+              <h1 class="mega-title" data-text="TU VIDA, TU PROPIA EXPERIENCIA">TU VIDA, TU PROPIA EXPERIENCIA</h1>
+              <p class="lead text-white mb-5">Tu oasis de lujo en el corazón de la naturaleza</p>
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <div class="feature-item">
+                    <i class="bi bi-star-fill fs-2 mb-2"></i>
+                    <p class="mb-0">Experiencia 5 estrellas</p>
+                  </div>
                 </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <div class="feature-item">
+                    <i class="bi bi-tree-fill fs-2 mb-2"></i>
+                    <p class="mb-0">Entorno natural único</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <div class="feature-item">
+                    <i class="bi bi-heart-fill fs-2 mb-2"></i>
+                    <p class="mb-0">Atención personalizada</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#reserva" class="btn btn-primary btn-lg me-3 mb-2">Reserva Ahora</a>
+              <a href="#habitaciones" class="btn btn-primary btn-lg me-3 mb-2">Explora Nuestras Habitaciones</a>
             </div>
-            <a href="#reserva" class="btn btn-primary btn-lg">Reserva Ahora</a>
-            <a href="#habitaciones" class="btn btn-outline-light btn-lg ms-3">Explora Nuestras Habitaciones</a>
+          </div>
         </div>
-    </header>
+      </header>
 
     <div class="content-wrapper">
         <section id="habitaciones" class="py-5 section-gradient">
@@ -110,13 +116,15 @@
 
         <section id="servicios" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestros Servicios</h2>
+                <h2 class="text-center mb-5 section-title">Nuestros Servicios</h2>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-card bg-white shadow-sm rounded overflow-hidden">
-                            <img src="images/wifi/WifiTest.jpg" alt="Wi-Fi Gratuito" class="img-fluid service-image">
-                            <div class="service-content p-4">
-                                <div class="service-icon-wrapper mb-3">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card h-100">
+                            <div class="service-image-wrapper">
+                                <img src="images/wifi/WifiTest.jpg" alt="Wi-Fi Gratuito" class="service-image">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon-wrapper">
                                     <i class="bi bi-wifi feature-icon"></i>
                                 </div>
                                 <h4 class="service-title">Wi-Fi Gratuito</h4>
@@ -124,11 +132,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-card bg-white shadow-sm rounded overflow-hidden">
-                            <img src="images/habitacion/image.jpg" alt="Comida Gourmet" class="img-fluid service-image">
-                            <div class="service-content p-4">
-                                <div class="service-icon-wrapper mb-3">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card h-100">
+                            <div class="service-image-wrapper">
+                                <img src="images/habitacion/image.jpg" alt="Comida Gourmet" class="service-image">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon-wrapper">
                                     <i class="bi bi-egg-fried feature-icon"></i>
                                 </div>
                                 <h4 class="service-title">Comida Gourmet</h4>
@@ -136,23 +146,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-card bg-white shadow-sm rounded overflow-hidden">
-                            <img src="images/habitacion/caption.jpg" alt="Piscina Infinity" class="img-fluid service-image">
-                            <div class="service-content p-4">
-                                <div class="service-icon-wrapper mb-3">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card h-100">
+                            <div class="service-image-wrapper">
+                                <img src="images/habitacion/caption.jpg" alt="Piscina Infinity" class="service-image">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon-wrapper">
                                     <i class="bi bi-water feature-icon"></i>
                                 </div>
-                                <h4 class="service-title">Piscina Deluxe</h4>
+                                <h4 class="service-title">Piscina Infinity</h4>
                                 <p class="service-description">Relájate en nuestra piscina con vistas panorámicas impresionantes.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-card bg-white shadow-sm rounded overflow-hidden">
-                            <img src="images/habitacion/maxresdefault.jpg" alt="VR-Experiencia" class="img-fluid service-image">
-                            <div class="service-content p-4">
-                                <div class="service-icon-wrapper mb-3">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card h-100">
+                            <div class="service-image-wrapper">
+                                <img src="images/habitacion/maxresdefault.jpg" alt="VR-Experiencia" class="service-image">
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon-wrapper">
                                     <i class="bi bi-headset-vr feature-icon"></i>
                                 </div>
                                 <h4 class="service-title">VR-Experiencia</h4>
@@ -169,26 +183,26 @@
                 <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestras Instalaciones</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-right">
-                        <img src="https://source.unsplash.com/800x600/?hotel-gym" alt="Gimnasio" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <img src="images/tours/Gimnasio.jpg" alt="Gimnasio" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
                         <h4 class="mt-3">Gimnasio Moderno</h4>
                         <p>Mantén tu rutina de ejercicios con nuestro gimnasio completamente equipado y vistas al exterior.</p>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <img src="https://source.unsplash.com/800x600/?hotel-spa" alt="Spa" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Spa Relajante</h4>
-                        <p>Disfruta de tratamientos rejuvenecedores en nuestro lujoso spa con ambiente zen.</p>
+                        <img src="images/tours/Seguridad.jpg" alt="Spa" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <h4 class="mt-3">Estacionamiento con Seguridad</h4>
+                        <p>Mantenemos tu vehiculo en buenas manos, con nuestra seguridad privada y cámaras de vigilancia 24/7.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-right">
-                        <img src="https://source.unsplash.com/800x600/?hotel-restaurant" alt="Restaurante" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <img src="images/tours/Resto.jpg" alt="Restaurante" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
                         <h4 class="mt-3">Restaurante Gourmet</h4>
                         <p>Deléitate con nuestra cocina de autor y una selección de vinos premium.</p>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <img src="https://source.unsplash.com/800x600/?hotel-pool" alt="Piscina" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Piscina Infinity</h4>
-                        <p>Sumérgete en nuestra piscina infinity con vistas panorámicas a las montañas.</p>
+                        <img src="images/tours/3dVR.jpg" alt="Piscina" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <h4 class="mt-3">Centro de Recreacion VR</h4>
+                        <p>¿Quieres disfrutar las mejores Leyendas Urbanas de Mendoza? Aquí las viviras como si fueras protagonista de ellas.</p>
                     </div>
                 </div>
             </div>
@@ -199,22 +213,22 @@
                 <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestra Ubicación</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6" data-aos="fade-right">
-                        <img src="https://source.unsplash.com/800x600/?mountain-hotel" alt="Vista del hotel" class="img-fluid rounded" style="object-fit: cover; height: 400px; width: 100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1732288794385!6m8!1m7!1sCAoSLEFGMVFpcE9jOGVmenZFZUcya1RJci1KNnRxOEZBQmtPcU5vUG8yWHFhZU1E!2m2!1d-32.9603379360879!2d-69.192767314948!3f341.4702597073127!4f-15.759285100863266!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-6" data-aos="fade-left">
                         <h4>En el Corazón de la Naturaleza</h4>
-                        <p>Hotelitus está estratégicamente ubicado en un enclave natural privilegiado, rodeado de montañas majestuosas y a orillas de un lago cristalino. Nuestro hotel ofrece el equilibrio perfecto entre accesibilidad y aislamiento, permitiéndote desconectar completamente mientras disfrutas de todas las comodidades.</p>
+                        <p>Hotelitus está estratégicamente ubicado en un enclave natural privilegiado, rodeado de montañas majestuosas y a escasos minutos de un lago cristalino. Nuestro hotel ofrece el equilibrio perfecto entre accesibilidad y aislamiento, permitiéndote disfrutar a tu máxima comodidad, tu experiencia.</p>
                         <ul class="list-unstyled">
-                            <li><i class="bi bi-geo-alt-fill text-primary"></i> Carretera del Lago, km 5, Valle Sereno</li>
-                            <li><i class="bi bi-telephone-fill text-primary"></i> +1 234 567 890</li>
+                            <li><i class="bi bi-geo-alt-fill text-primary"></i> RP89, Potrerillos, Mendoza</li>
+                            <li><i class="bi bi-telephone-fill text-primary"></i> +54 9 2614452345</li>
                             <li><i class="bi bi-envelope-fill text-primary"></i> info@hotelitus.com</li>
                         </ul>
                         <p>A tan solo:</p>
                         <ul>
-                            <li>15 minutos del aeropuerto regional</li>
-                            <li>30 minutos del centro de la ciudad</li>
+                            <li>30 minutos del centro de Potrerillo</li>
+                            <li>15 minutos del Rio Mendoza </li>
                             <li>5 minutos de senderos de montaña</li>
-                            <li>Acceso directo al lago</li>
+                            <li>Acceso semi-directo al lago</li>
                         </ul>
                     </div>
                 </div>
@@ -228,7 +242,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="review-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://source.unsplash.com/100x100/?woman,portrait" alt="Foto de María G." class="rounded-circle me-3" width="60" height="60">
+                                <img src="images/logos/MariaG.jpeg" alt="Foto de María G." class="rounded-circle me-3" width="60" height="60">
                                 <div>
                                     <h5 class="mb-0">María G.</h5>
                                     <div class="star-rating">
@@ -246,7 +260,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="review-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://source.unsplash.com/100x100/?man,portrait" alt="Foto de Carlos R." class="rounded-circle me-3" width="60" height="60">
+                                <img src="images/logos/Raul.jpg" alt="Foto de Carlos R." class="rounded-circle me-3" width="60" height="60">
                                 <div>
                                     <h5 class="mb-0">Carlos R.</h5>
                                     <div class="star-rating">
@@ -264,7 +278,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="review-card">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="https://source.unsplash.com/100x100/?woman,face" alt="Foto de Ana L." class="rounded-circle me-3" width="60" height="60">
+                                <img src="images/logos/Ana.jpeg" alt="Foto de Ana L." class="rounded-circle me-3" width="60" height="60">
                                 <div>
                                     <h5 class="mb-0">Ana L.</h5>
                                     <div class="star-rating">
@@ -329,7 +343,7 @@
                 <div class="col-md-6 mb-3">
                     <h5>Contacto</h5>
                     <p>Email: info@hotelitus.com</p>
-                    <p>Teléfono: +1 234 567 890</p>
+                    <p>Teléfono: +54 9 2614452345</p>
                 </div>
                 <div class="col-md-6 mb-3">
                     <h5>Síguenos</h5>
@@ -339,7 +353,7 @@
                 </div>
             </div>
             <hr class="my-4">
-            <p>&copy; 2023 Hotelitus. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Hotelitus. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -347,5 +361,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- JavaScript file reference -->
     <script src="js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
