@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOTELITUS - Tu hogar lejos de casa</title>
+    <title data-translate="pageTitle">HOTELITUS - Tu hogar lejos de casa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- CSS file reference -->
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -24,13 +21,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habitaciones">Habitaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#instalaciones">Instalaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resenas">Reseñas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio" data-translate="home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habitaciones" data-translate="rooms">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios" data-translate="services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#instalaciones" data-translate="facilities">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion" data-translate="location">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resenas" data-translate="reviews">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" data-translate="contact">Contacto</a></li>
+                    <li class="nav-item">
+                        <select id="languageSelector" class="form-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
                     <li class="nav-item">
                         <span class="nav-link theme-toggle" id="themeToggle">
                             <i class="bi bi-sun-fill"></i>
@@ -45,70 +48,69 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center justify-content-center">
             <div class="col-12 text-center">
-              <h1 class="mega-title" data-text="TU VIDA, TU PROPIA EXPERIENCIA">TU VIDA, TU PROPIA EXPERIENCIA</h1>
-              <p class="lead text-white mb-5">Tu oasis de lujo en el corazón de la naturaleza</p>
+              <h1 class="mega-title" data-translate="heroTitle">TU VIDA, TU PROPIA EXPERIENCIA</h1>
+              <p class="lead text-white mb-5" data-translate="heroSubtitle">Tu oasis de lujo en el corazón de la naturaleza</p>
               <div class="row justify-content-center mb-5">
                 <div class="col-md-3 col-sm-6 mb-3">
                   <div class="feature-item">
                     <i class="bi bi-star-fill fs-2 mb-2"></i>
-                    <p class="mb-0">Experiencia 5 estrellas</p>
+                    <p class="mb-0" data-translate="fiveStarExperience">Experiencia 5 estrellas</p>
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-3">
                   <div class="feature-item">
                     <i class="bi bi-tree-fill fs-2 mb-2"></i>
-                    <p class="mb-0">Entorno natural único</p>
+                    <p class="mb-0" data-translate="uniqueEnvironment">Entorno natural único</p>
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-3">
                   <div class="feature-item">
                     <i class="bi bi-heart-fill fs-2 mb-2"></i>
-                    <p class="mb-0">Atención personalizada</p>
+                    <p class="mb-0" data-translate="personalizedAttention">Atención personalizada</p>
                   </div>
                 </div>
               </div>
-              <a href="#reserva" class="btn btn-primary btn-lg me-3 mb-2">Reserva Ahora</a>
-              <a href="#habitaciones" class="btn btn-primary btn-lg me-3 mb-2">Explora Nuestras Habitaciones</a>
+              <a href="#reserva" class="btn btn-primary btn-lg me-3 mb-2" data-translate="bookNow">Reserva Ahora</a>
             </div>
           </div>
         </div>
-      </header>
+    </header>
 
     <div class="content-wrapper">
         <section id="habitaciones" class="py-5 section-gradient">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestras Habitaciones</h2>
+                <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-translate="ourRooms">Nuestras Habitaciones</h2>
                 <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/habitacion/HabitacionDeLujo.jpg" class="d-block w-100" alt="Habitación de Lujo" style="object-fit: cover; height: 400px;">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Habitación de Lujo</h5>
-                                <p>Experimenta el máximo confort con vistas impresionantes.</p>
+                                <h5 data-translate="luxuryRoom">Habitación de Lujo</h5>
+                                <p data-translate="luxuryRoomDesc">Experimenta el máximo confort con vistas impresionantes.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/habitacion/SuiteEjecutiva.jpg" class="d-block w-100" alt="Suite Ejecutiva" style="object-fit: cover; height: 400px;">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Suite Ejecutiva</h5>
-                                <p>Espaciosa y elegante, perfecta para largas estancias.</p>
+                                <h5 data-translate="executiveSuite">Suite Ejecutiva</h5>
+                                <p data-translate="executiveSuiteDesc">Espaciosa y elegante, perfecta para largas estancias.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="images/habitacion/vista-desde-la-habitacion.jpg" class="d-block w-100" alt="Habitación Vista Montaña" style="object-fit: cover; height: 400px;">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Habitación Vista Montaña</h5>
-                                <p>Despierta con las mejores vistas de la naturaleza.</p>
+                                <h5 data-translate="mountainViewRoom">Habitación Vista Montaña</h5>
+                                <p data-translate="mountainViewRoomDesc">Despierta con las mejores vistas de la naturaleza.</p>
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
+                        <span class="visually-hidden" data-translate="previous">Anterior</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Siguiente</span>
+                        <span class="visually-hidden" data-translate="next">Siguiente</span>
                     </button>
                 </div>
             </div>
@@ -116,7 +118,7 @@
 
         <section id="servicios" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5 section-title">Nuestros Servicios</h2>
+                <h2 class="text-center mb-5 section-title" data-translate="ourServices">Nuestros Servicios</h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="service-card h-100">
@@ -127,8 +129,8 @@
                                 <div class="service-icon-wrapper">
                                     <i class="bi bi-wifi feature-icon"></i>
                                 </div>
-                                <h4 class="service-title">Wi-Fi Gratuito</h4>
-                                <p class="service-description">Conexión de alta velocidad en todas las áreas del hotel.</p>
+                                <h4 class="service-title" data-translate="freeWifi">Wi-Fi Gratuito</h4>
+                                <p class="service-description" data-translate="freeWifiDesc">Conexión de alta velocidad en todas las áreas del hotel.</p>
                             </div>
                         </div>
                     </div>
@@ -141,8 +143,8 @@
                                 <div class="service-icon-wrapper">
                                     <i class="bi bi-egg-fried feature-icon"></i>
                                 </div>
-                                <h4 class="service-title">Comida Gourmet</h4>
-                                <p class="service-description">Deléitate con nuestra exquisita gastronomía de clase mundial.</p>
+                                <h4 class="service-title" data-translate="gourmetFood">Comida Gourmet</h4>
+                                <p class="service-description" data-translate="gourmetFoodDesc">Deléitate con nuestra exquisita gastronomía de clase mundial.</p>
                             </div>
                         </div>
                     </div>
@@ -155,8 +157,8 @@
                                 <div class="service-icon-wrapper">
                                     <i class="bi bi-water feature-icon"></i>
                                 </div>
-                                <h4 class="service-title">Piscina Infinity</h4>
-                                <p class="service-description">Relájate en nuestra piscina con vistas panorámicas impresionantes.</p>
+                                <h4 class="service-title" data-translate="infinityPool">Piscina Infinity</h4>
+                                <p class="service-description" data-translate="infinityPoolDesc">Relájate en nuestra piscina con vistas panorámicas impresionantes.</p>
                             </div>
                         </div>
                     </div>
@@ -169,8 +171,8 @@
                                 <div class="service-icon-wrapper">
                                     <i class="bi bi-headset-vr feature-icon"></i>
                                 </div>
-                                <h4 class="service-title">VR-Experiencia</h4>
-                                <p class="service-description">Sumérgete en emocionantes aventuras virtuales sin salir del hotel.</p>
+                                <h4 class="service-title" data-translate="vrExperience">VR-Experiencia</h4>
+                                <p class="service-description" data-translate="vrExperienceDesc">Sumérgete en emocionantes aventuras virtuales sin salir del hotel.</p>
                             </div>
                         </div>
                     </div>
@@ -180,29 +182,29 @@
 
         <section id="instalaciones" class="py-5 section-gradient">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestras Instalaciones</h2>
+                <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-translate="ourFacilities">Nuestras Instalaciones</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-right">
                         <img src="images/tours/Gimnasio.jpg" alt="Gimnasio" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Gimnasio Moderno</h4>
-                        <p>Mantén tu rutina de ejercicios con nuestro gimnasio completamente equipado y vistas al exterior.</p>
+                        <h4 class="mt-3" data-translate="modernGym">Gimnasio Moderno</h4>
+                        <p data-translate="modernGymDesc">Mantén tu rutina de ejercicios con nuestro gimnasio completamente equipado y vistas al exterior.</p>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <img src="images/tours/Seguridad.jpg" alt="Spa" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Estacionamiento con Seguridad</h4>
-                        <p>Mantenemos tu vehiculo en buenas manos, con nuestra seguridad privada y cámaras de vigilancia 24/7.</p>
+                        <img src="images/tours/Seguridad.jpg" alt="Estacionamiento" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <h4 class="mt-3" data-translate="secureParking">Estacionamiento con Seguridad</h4>
+                        <p data-translate="secureParkingDesc">Mantenemos tu vehículo en buenas manos, con nuestra seguridad privada y cámaras de vigilancia 24/7.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-right">
                         <img src="images/tours/Resto.jpg" alt="Restaurante" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Restaurante Gourmet</h4>
-                        <p>Deléitate con nuestra cocina de autor y una selección de vinos premium.</p>
+                        <h4 class="mt-3" data-translate="gourmetRestaurant">Restaurante Gourmet</h4>
+                        <p data-translate="gourmetRestaurantDesc">Deléitate con nuestra cocina de autor y una selección de vinos premium.</p>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-left">
-                        <img src="images/tours/3dVR.jpg" alt="Piscina" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
-                        <h4 class="mt-3">Centro de Recreacion VR</h4>
-                        <p>¿Quieres disfrutar las mejores Leyendas Urbanas de Mendoza? Aquí las viviras como si fueras protagonista de ellas.</p>
+                        <img src="images/tours/3dVR.jpg" alt="Centro VR" class="img-fluid rounded" style="object-fit: cover; height: 300px; width: 100%;">
+                        <h4 class="mt-3" data-translate="vrCenter">Centro de Recreación VR</h4>
+                        <p data-translate="vrCenterDesc">¿Quieres disfrutar las mejores Leyendas Urbanas de Mendoza? Aquí las vivirás como si fueras protagonista de ellas.</p>
                     </div>
                 </div>
             </div>
@@ -210,25 +212,25 @@
 
         <section id="ubicacion" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Nuestra Ubicación</h2>
+                <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-translate="ourLocation">Nuestra Ubicación</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6" data-aos="fade-right">
                         <iframe src="https://www.google.com/maps/embed?pb=!4v1732288794385!6m8!1m7!1sCAoSLEFGMVFpcE9jOGVmenZFZUcya1RJci1KNnRxOEZBQmtPcU5vUG8yWHFhZU1E!2m2!1d-32.9603379360879!2d-69.192767314948!3f341.4702597073127!4f-15.759285100863266!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-6" data-aos="fade-left">
-                        <h4>En el Corazón de la Naturaleza</h4>
-                        <p>Hotelitus está estratégicamente ubicado en un enclave natural privilegiado, rodeado de montañas majestuosas y a escasos minutos de un lago cristalino. Nuestro hotel ofrece el equilibrio perfecto entre accesibilidad y aislamiento, permitiéndote disfrutar a tu máxima comodidad, tu experiencia.</p>
+                        <h4 data-translate="inTheHeartOfNature">En el Corazón de la Naturaleza</h4>
+                        <p data-translate="locationDesc">Hotelitus está estratégicamente ubicado en un enclave natural privilegiado, rodeado de montañas majestuosas y a escasos minutos de un lago cristalino. Nuestro hotel ofrece el equilibrio perfecto entre accesibilidad y aislamiento, permitiéndote disfrutar a tu máxima comodidad, tu experiencia.</p>
                         <ul class="list-unstyled">
-                            <li><i class="bi bi-geo-alt-fill text-primary"></i> RP89, Potrerillos, Mendoza</li>
-                            <li><i class="bi bi-telephone-fill text-primary"></i> +54 9 2614452345</li>
-                            <li><i class="bi bi-envelope-fill text-primary"></i> info@hotelitus.com</li>
+                            <li><i class="bi bi-geo-alt-fill text-primary"></i> <span data-translate="address">RP89, Potrerillos, Mendoza</span></li>
+                            <li><i class="bi bi-telephone-fill text-primary"></i> <span data-translate="phone">+54 9 2614452345</span></li>
+                            <li><i class="bi bi-envelope-fill text-primary"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f2919c9a9db29a9b869790958687819c9f97">[email&#160;protected]</a></li>
                         </ul>
-                        <p>A tan solo:</p>
+                        <p data-translate="justMinutesAway">A tan solo:</p>
                         <ul>
-                            <li>30 minutos del centro de Potrerillo</li>
-                            <li>15 minutos del Rio Mendoza </li>
-                            <li>5 minutos de senderos de montaña</li>
-                            <li>Acceso semi-directo al lago</li>
+                            <li data-translate="minutesFromCenter">30 minutos del centro de Potrerillo</li>
+                            <li data-translate="minutesFromRiver">15 minutos del Rio Mendoza</li>
+                            <li data-translate="minutesFromTrails">5 minutos de senderos de montaña</li>
+                            <li data-translate="lakeAccess">Acceso semi-directo al lago</li>
                         </ul>
                     </div>
                 </div>
@@ -237,7 +239,7 @@
 
         <section id="resenas" class="py-5 section-gradient">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Lo que dicen nuestros huéspedes</h2>
+                <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-translate="guestReviews">Lo que dicen nuestros huéspedes</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="review-card">
@@ -254,7 +256,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>"Una experiencia inolvidable. Las vistas son impresionantes y el servicio es excepcional. Definitivamente volveré a este paraíso."</p>
+                            <p data-translate="review1">"Una experiencia inolvidable. Las vistas son impresionantes y el servicio es excepcional. Definitivamente volveré a este paraíso."</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
@@ -272,7 +274,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>"El lugar perfecto para desconectar. Las habitaciones son lujosas y cómodas. El personal es muy atento y siempre dispuesto a ayudar."</p>
+                            <p data-translate="review2">"El lugar perfecto para desconectar. Las habitaciones son lujosas y cómodas. El personal es muy atento y siempre dispuesto a ayudar."</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
@@ -290,7 +292,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>"La comida del restaurante es exquisita. Los chefs realmente saben cómo resaltar los sabores locales. Una experiencia culinaria inolvidable."</p>
+                            <p data-translate="review3">"La comida del restaurante es exquisita. Los chefs realmente saben cómo resaltar los sabores locales. Una experiencia culinaria inolvidable."</p>
                         </div>
                     </div>
                 </div>
@@ -299,37 +301,37 @@
 
         <section id="reserva" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5 section-title" data-aos="fade-up">Haz tu Reserva</h2>
+                <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-translate="makeReservation">Haz tu Reserva</h2>
                 <form id="reservationForm" data-aos="fade-up">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                            <input type="text" class="form-control" id="name" data-translate-placeholder="name" placeholder="Nombre" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            <input type="email" class="form-control" id="email" data-translate-placeholder="email" placeholder="Email" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="date" class="form-control" id="checkIn" placeholder="Fecha de llegada" required>
+                            <input type="date" class="form-control" id="checkIn" data-translate-placeholder="checkInDate" placeholder="Fecha de llegada" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="date" class="form-control" id="checkOut" placeholder="Fecha de salida" required>
+                            <input type="date" class="form-control" id="checkOut" data-translate-placeholder="checkOutDate" placeholder="Fecha de salida" required>
                         </div>
                         <div class="col-md-6">
                             <select class="form-select" id="roomType" required>
-                                <option selected disabled value="">Tipo de habitación</option>
-                                <option>Habitación de Lujo</option>
-                                <option>Suite Ejecutiva</option>
-                                <option>Habitación Vista Montaña</option>
+                                <option selected disabled value="" data-translate="selectRoomType">Tipo de habitación</option>
+                                <option data-translate="luxuryRoom">Habitación de Lujo</option>
+                                <option data-translate="executiveSuite">Suite Ejecutiva</option>
+                                <option data-translate="mountainViewRoom">Habitación Vista Montaña</option>
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <input type="number" class="form-control" id="guests" placeholder="Número de huéspedes" required>
+                            <input type="number" class="form-control" id="guests" data-translate-placeholder="numberOfGuests" placeholder="Número de huéspedes" required>
                         </div>
                         <div class="col-12">
-                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Solicitudes especiales"></textarea>
+                            <textarea class="form-control" id="specialRequests" rows="3" data-translate-placeholder="specialRequests" placeholder="Solicitudes especiales"></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary w-100">Reservar Ahora</button>
+                            <button type="submit" class="btn btn-primary w-100" data-translate="bookNow">Reservar Ahora</button>
                         </div>
                     </div>
                 </form>
@@ -341,26 +343,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <h5>Contacto</h5>
-                    <p>Email: info@hotelitus.com</p>
-                    <p>Teléfono: +54 9 2614452345</p>
+                    <h5 data-translate="contact">Contacto</h5>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d34333531331d35342934393a292824733e3230">[email&#160;protected]</a></p>
+                    <p data-translate="phone">Teléfono: +54 9 2614452345</p>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <h5>Síguenos</h5>
+                    <h5 data-translate="followUs">Síguenos</h5>
                     <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
                     <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
                 </div>
             </div>
             <hr class="my-4">
-            <p>&copy; 2024 Hotelitus. Todos los derechos reservados.</p>
+            <p data-translate="copyright">&copy; 2024 Hotelitus. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- JavaScript file reference -->
     <script src="js/javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/language-switcher.js"></script>
 </body>
 </html>
