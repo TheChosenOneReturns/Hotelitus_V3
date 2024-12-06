@@ -641,6 +641,27 @@ footer a:hover {
     color: transparent;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
   }
+  .map-container {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    padding: 0;
+}
+
+.map-container iframe {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+
+/* Asegura que el mapa sea más alto en pantallas más grandes */
+@media (min-width: 992px) {
+    .map-container,
+    .map-container iframe {
+        min-height: 500px;
+    }
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .service-card { margin-bottom: 30px; }
